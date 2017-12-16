@@ -55,12 +55,13 @@ class tasksController extends http\controller
         session_start();
         date_default_timezone_set("Asia/Bangkok");
         $todo->ownerid = $_SESSION['userID'];
-        $todo->createdate = date("Y/m/d");
+        $todo->createddate = date("Y/m/d");
         $todo->owneremail = $_POST['owneremail'];
         $todo->message = $_POST['message'];
         $todo->isdone = $_POST['isdone'];
         $todo->duedate = $_POST['duedate'];
         $todo->save();
+        header("Location: index.php?page=tasks&action=all");
     }
 
     //this is the function to view edit record form
@@ -84,14 +85,21 @@ class tasksController extends http\controller
 
     }
 
-    public static function save() {
+    public static function save()
+    {
         session_start();
-        $task = new todo();
 
-        $task->body = $_POST['body'];
-        $task->ownerid = $_SESSION['userID'];
-        $task->save();
+        $record = new todo();
 
+        $record = todos::findOne($_REQUEST['id']);
+        $record->owneremail = $_POST['owneremail'];
+        $record->ownerid = $_POST['ownerid'];
+        $record->createddate = $_POST['createddate'];
+        $record->duedate = $_POST['duedate'];
+        $record->message = $_POST['message'];
+        $record->isdone = $_POST['isdone'];
+        $record->save();
+        header("Location: index.php?page=tasks&action=all");
     }
 
     //this is the delete function.  You actually return the edit form and then there should be 2 forms on that.

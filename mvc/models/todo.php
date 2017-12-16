@@ -21,7 +21,7 @@ final class todo extends database\model
     public function validate()
     {
         $valid = TRUE;
-        echo 'myemail: ' . $this->email;
+       // echo 'myemail: ' . $this->email;
         if($this->message == '') {
             $valid = FALSE;
             echo 'nothing in message';
