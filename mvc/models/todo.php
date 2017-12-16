@@ -17,6 +17,20 @@ final class todo extends database\model
         $tableName = 'todos';
         return $tableName;
     }
+
+    public function validate()
+    {
+        $valid = TRUE;
+        echo 'myemail: ' . $this->email;
+        if($this->message == '') {
+            $valid = FALSE;
+            echo 'nothing in message';
+        }
+
+
+        return $valid;
+
+    }
 }
 
 ?>

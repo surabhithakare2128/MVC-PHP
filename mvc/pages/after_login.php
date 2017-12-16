@@ -18,7 +18,7 @@
 <body>
 
 
-<form action="index.php?page=tasks&action=register" method="post">
+<form action="index.php?page=tasks&action=create" method="post">
     owner email: <input type="text" name="owneremail" value="<?php echo $data->owneremail;?>"><br>
     due date: <input type="text" name="duedate" value="<?php echo $data->duedate;?>"><br>
     message: <input type="text" name="message" value="<?php echo $data->message;?>"><br>
