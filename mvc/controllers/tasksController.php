@@ -92,7 +92,7 @@ class tasksController extends http\controller
 
     public static function save()
     {
-        session_start();
+        //session_start();
 
         $record = new todo();
 
