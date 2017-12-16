@@ -24,6 +24,7 @@ class tasksController extends http\controller
         $todo = new todo();
         self::getTemplate('after_login', $todo);
     }
+
     //to call the show function the url is index.php?page=task&action=list_task
 
     public static function all()
@@ -101,6 +102,7 @@ class tasksController extends http\controller
         $record->save();
         header("Location: index.php?page=tasks&action=all");
     }
+
 
     //this is the delete function.  You actually return the edit form and then there should be 2 forms on that.
     //One form is the todo and the other is just for the delete button

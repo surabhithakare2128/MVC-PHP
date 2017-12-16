@@ -17,7 +17,6 @@
 
 <body>
 
-
 <form action="index.php?page=tasks&action=create" method="post">
     id: <input type="text" name="id" value="<?php echo $data->id;?>"><br>
     owner email: <input type="text" name="owneremail" value="<?php echo $data->owneremail;?>"><br>
