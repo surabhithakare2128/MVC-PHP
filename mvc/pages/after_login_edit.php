@@ -26,7 +26,7 @@
     message: <input type="text" name="message" value="<?php echo $data->message;?>"><br>
     is done: <input type="text" name="isdone" value="<?php echo $data->isdone;?>"><br>
 
-    <input type="submit" value="Submit form">
+    <input type="submit" value="Update Task">
 </form>
 
 

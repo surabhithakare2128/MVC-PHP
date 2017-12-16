@@ -29,7 +29,16 @@ class tasksController extends http\controller
 
     public static function all()
     {
-        $records = todos::findAll();
+        //$records = todos::findAll();
+
+        session_start();
+
+        $userID = $_SESSION['userID'];
+
+        $records = todos::findTasksbyID($userID);
+        //print_r($records);
+        echo 'User ID is: ';
+        echo $userID;
         /*session_start();
            if(key_exists('userID',$_SESSION)) {
                $userID = $_SESSION['userID'];
@@ -92,8 +101,8 @@ class tasksController extends http\controller
 
     public static function save()
     {
-        //session_start();
-
+        /*session_start();
+        */
         $record = new todo();
 
         $record = todos::findOne($_REQUEST['id']);
