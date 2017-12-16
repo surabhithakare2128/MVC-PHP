@@ -148,17 +148,17 @@ class routes
 
         $route = new route();
         $route->http_method = 'POST';
-        $route->action = 'show';
-        $route->page = 'after_login';
-        $route->controller = 'accountsController';
+        $route->action = 'create';
+        $route->page = 'tasks';
+        $route->controller = 'tasksController';
         $route->method = 'create';
         $routes[] = $route;
 
         $route = new route();
         $route->http_method = 'GET';
-        $route->action = 'show';
-        $route->page = 'after_login';
-        $route->controller = 'accountsController';
+        $route->action = 'create';
+        $route->page = 'tasks';
+        $route->controller = 'tasksController';
         $route->method = 'showpage';
         $routes[] = $route;
 

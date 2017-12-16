@@ -18,6 +18,12 @@ class tasksController extends http\controller
         self::getTemplate('show_task', $record);
     }
 
+
+    public static function showpage()
+    {
+        $todo = new todo();
+        self::getTemplate('after_login', $todo);
+    }
     //to call the show function the url is index.php?page=task&action=list_task
 
     public static function all()
@@ -88,5 +94,5 @@ class tasksController extends http\controller
 
     }
 
-   
+
 }

@@ -136,7 +136,7 @@ class accountsController extends http\controller
                 print_r($_SESSION);
                 echo '<br>';
 
-                header("Location: index.php?page=after_login&action=show");
+                header("Location: index.php?page=tasks&action=all");
                 //header("Location: index.php?page=after_login&action=all");
                // header("Location: index.php?page=after_login&action=show");
             } else {
@@ -149,7 +149,7 @@ class accountsController extends http\controller
 
 
     }
-
+/*
     public static function showpage()
     {
         echo 'hi';
@@ -157,5 +157,5 @@ class accountsController extends http\controller
         header("Location: index.php?page=tasks&action=all");
 
     }
-
+*/
 }
