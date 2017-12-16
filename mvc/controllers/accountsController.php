@@ -128,12 +128,17 @@ class accountsController extends http\controller
             if($user->checkPassword($_POST['password']) == TRUE) {
 
                 echo 'login';
-
+                echo '<br>';
                 session_start();
                 $_SESSION["userID"] = $user->id;
 
                 //forward the user to the show all todos page
                 print_r($_SESSION);
+                echo '<br>';
+
+                header("Location: index.php?page=after_login&action=show");
+                //header("Location: index.php?page=after_login&action=all");
+               // header("Location: index.php?page=after_login&action=show");
             } else {
                 echo 'password does not match';
             }
@@ -142,6 +147,14 @@ class accountsController extends http\controller
 
 
 
+
+    }
+
+    public static function showpage()
+    {
+        echo 'hi';
+        echo 'USER';
+        header("Location: index.php?page=tasks&action=all");
 
     }
 
