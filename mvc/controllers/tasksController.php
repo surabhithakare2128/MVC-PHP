@@ -37,9 +37,9 @@ class tasksController extends http\controller
 
         $records = todos::findTasksbyID($userID);
         //print_r($records);
-        echo 'User ID is: ';
+        /*echo 'User ID is: ';
         echo $userID;
-        /*session_start();
+        session_start();
            if(key_exists('userID',$_SESSION)) {
                $userID = $_SESSION['userID'];
            } else {
