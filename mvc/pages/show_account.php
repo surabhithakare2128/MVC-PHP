@@ -24,10 +24,8 @@
 
 <?php
 //this is how you print something  $data contains the record that was selected on the table.
-
-print_r($data);
-
-
+print(utility\htmlTable::generateTableFromOneRecord($data));
+//print_r($data);
 ?>
 
 <form action="index.php?page=accounts&action=save&id=<?php echo $data->id; ?>" method="post">
@@ -39,7 +37,7 @@ print_r($data);
     Phone: <input type="text" name="phone" value="<?php echo $data->phone; ?>"><br>
     Birthday: <input type="text" name="birthday" value="<?php echo $data->birthday; ?>"><br>
     Gender: <input type="text" name="gender" value="<?php echo $data->gender; ?>"><br>
-    <input type="submit" value="Submit form">
+    <input type="submit" value="UPDATE">
 </form>
 
 

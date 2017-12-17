@@ -15,7 +15,8 @@ class accountsController extends http\controller
     //to call the show function the url is index.php?page=task&action=show
     public static function show()
     {
-        $record = accounts::findOne($_REQUEST['id']);
+        session_start();
+        $record = accounts::findOne($_SESSION['userID']);
         self::getTemplate('show_account', $record);
     }
 
@@ -156,6 +157,8 @@ class accountsController extends http\controller
         header("Location: https://web.njit.edu/~st638/project/mvc/index.php");
 
     }
+
+
 
 
 /*

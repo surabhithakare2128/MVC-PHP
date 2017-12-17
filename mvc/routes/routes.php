@@ -178,6 +178,23 @@ class routes
         $route->method = 'logout';
         $routes[] = $route;
 
+        $route = new route();
+        $route->http_method = 'GET';
+        $route->action = 'one';
+        $route->page = 'accounts';
+        $route->controller = 'accountsController';
+        $route->method = 'one';
+        $routes[] = $route;
+
+
+        $route = new route();
+        $route->http_method = 'GET';
+        $route->action = 'show';
+        $route->page = 'accounts';
+        $route->controller = 'accountsController';
+        $route->method = 'show';
+        $routes[] = $route;
+
 /*
         $route = new route();
         $route->http_method = 'GET';

@@ -19,6 +19,8 @@
 
     <h1><a href="index.php?page=accounts&action=all">All Accounts</a></h1>
 
+    <h1><a href="index.php?page=accounts&action=show">Your Account</a></h1>
+
     <h1><a href="index.php?page=tasks&action=create">Create Tasks</a></h1>
 
     <!-- <h1><a href="index.php?page=tasks&action=all">Tasks Created By You Are</a></h1> -->
@@ -35,6 +37,8 @@
         }
 
     ?>
+
+    <h1>YOUR PROFILE</h1>
 
     <h1><a href="index.php?page=accounts&action=logout">LOGOUT</a></h1>
 
