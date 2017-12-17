@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 
 <html lang="en">
 <head>
@@ -12,10 +12,13 @@
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+    <![endif]
 </head>
 
-<body>
+<body> -->
+
+
+<?php include 'header.php'; ?>
 
     <h1><a href="index.php?page=accounts&action=all">All Accounts</a></h1> 
 
@@ -40,7 +43,9 @@
 
     <h1><a href="index.php?page=accounts&action=logout">LOGOUT</a></h1>
 
+    <?php include 'footer.php'; ?>
+<!--
     <script src="js/scripts.js"></script>
 
 </body>
-</html>
+</html> -->
