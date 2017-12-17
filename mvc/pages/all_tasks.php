@@ -17,7 +17,7 @@
 
 <body>
 
-    <!-- <h1><a href="index.php?page=accounts&action=all">All Accounts</a></h1> -->
+    <h1><a href="index.php?page=accounts&action=all">All Accounts</a></h1> 
 
     <h1><a href="index.php?page=accounts&action=show">Your Profile</a></h1>
 
