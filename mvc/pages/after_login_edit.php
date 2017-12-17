@@ -26,7 +26,11 @@
     message: <input type="text" name="message" value="<?php echo $data->message;?>"><br>
     is done: <input type="text" name="isdone" value="<?php echo $data->isdone;?>"><br>
 
-    <input type="submit" value="Update Task">
+    <input type="submit" value="Update Task"> <br><br>
+</form>
+
+<form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
+    <button type="submit" form="form1" value="delete">Delete</button>
 </form>
 
 
