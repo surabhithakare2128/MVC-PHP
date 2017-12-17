@@ -20,7 +20,7 @@
 <form action="index.php?page=tasks&action=save&id=<?php  echo $data->id; ?>" method="post">
     id: <input type="text" name="id" value="<?php echo $data->id;?>"><br>
     owner email: <input type="text" name="owneremail" value="<?php echo $data->owneremail;?>"><br>
-    owner id: <input type="text" name="ownerid" value="<?php echo $data->ownerid;?>"><br>
+    <!-- owner id: <input type="text" name="ownerid" value="<?php echo $data->ownerid;?>"><br> -->
     created date: <input type="text" name="createddate" value="<?php echo $data->createddate;?>"><br>
     due date: <input type="text" name="duedate" value="<?php echo $data->duedate;?>"><br>
     message: <input type="text" name="message" value="<?php echo $data->message;?>"><br>
