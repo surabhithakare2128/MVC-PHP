@@ -38,6 +38,8 @@ print(utility\htmlTable::generateTableFromOneRecord($data));
     Birthday: <input type="text" name="birthday" value="<?php echo $data->birthday; ?>"><br>
     Gender: <input type="text" name="gender" value="<?php echo $data->gender; ?>"><br>
     <input type="submit" value="UPDATE">
+
+
 </form>
 
 
