@@ -149,6 +149,15 @@ class accountsController extends http\controller
 
 
     }
+
+    public static function logout(){
+        session_start();
+        unset($_SESSION['userID']);
+        header("Location: https://web.njit.edu/~st638/project/mvc/index.php");
+
+    }
+
+
 /*
     public static function showpage()
     {
