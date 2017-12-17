@@ -30,7 +30,4 @@
 </form>
 <h1><a href="index.php?page=accounts&action=register">Register</a></h1>
 
-
-<script src="js/scripts.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>
