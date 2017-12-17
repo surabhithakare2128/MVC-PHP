@@ -38,8 +38,6 @@
 
     ?>
 
-    <h1>YOUR PROFILE</h1>
-
     <h1><a href="index.php?page=accounts&action=logout">LOGOUT</a></h1>
 
     <script src="js/scripts.js"></script>
