@@ -19,10 +19,14 @@
 
 <h1><a href="index.php?page=accounts&action=all">All Accounts</a></h1>
 
-<h1><a href="index.php?page=tasks&action=all">All Tasks</a></h1>
-
 <h1><a href="index.php?page=tasks&action=create">Create Tasks</a></h1>
 
+<!-- <h1><a href="index.php?page=tasks&action=all">Tasks Created By You</a></h1> -->
+
+
+<h1>Tasks Created By You</h1>
+
+</body>
 
 <?php
 //this is how you print something
