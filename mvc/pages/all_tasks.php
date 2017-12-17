@@ -30,9 +30,11 @@
 
 <?php
 //this is how you print something
-
-print utility\htmlTable::genarateTableFromMultiArray($data);
-
+    if($data = false){
+        echo 'You did not create any Task';
+    }else {
+        print utility\htmlTable::genarateTableFromMultiArray($data);
+    }
 
 ?>
 
