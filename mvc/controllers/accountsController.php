@@ -67,6 +67,9 @@ class accountsController extends http\controller
             //you may want to send the person to a
             // login page or create a session and log them in
             // and then send them to the task list page and a link to create tasks
+
+
+
             header("Location: index.php");
 
         } else {
@@ -98,6 +101,8 @@ class accountsController extends http\controller
         $user->birthday = $_POST['birthday'];
         $user->gender = $_POST['gender'];
         $user->save();
+
+
         header("Location: index.php?page=tasks&action=all");
 
     }
