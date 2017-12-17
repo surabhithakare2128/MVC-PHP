@@ -171,7 +171,7 @@ class routes
         $routes[] = $route;
 
         $route = new route();
-        $route->http_method = 'POST';
+        $route->http_method = 'GET';
         $route->action = 'logout';
         $route->page = 'accounts';
         $route->controller = 'accountsController';
