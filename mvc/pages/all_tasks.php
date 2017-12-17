@@ -21,16 +21,14 @@
 
 <h1><a href="index.php?page=tasks&action=create">Create Tasks</a></h1>
 
-<!-- <h1><a href="index.php?page=tasks&action=all">Tasks Created By You</a></h1> -->
+<!-- <h1><a href="index.php?page=tasks&action=all">Tasks Created By You Are</a></h1> -->
 
 
-<h1>Tasks Created By You</h1>
-
-</body>
+<h1>Tasks Created By You Are As Follows:</h1>
 
 <?php
 //this is how you print something
-    if($data = false){
+    if($data == false){
         echo 'You did not create any Task';
     }else {
         print utility\htmlTable::genarateTableFromMultiArray($data);
