@@ -185,7 +185,7 @@ class routes
         $route->controller = 'accountsController';
         $route->method = 'one';
         $routes[] = $route;
-
+/*
 
         $route = new route();
         $route->http_method = 'GET';
@@ -195,7 +195,6 @@ class routes
         $route->method = 'show';
         $routes[] = $route;
 
-/*
         $route = new route();
         $route->http_method = 'GET';
         $route->action = 'show';
