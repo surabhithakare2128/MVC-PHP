@@ -23,7 +23,7 @@
 <?php
 
     if($data == false){
-        echo '<h3>You did not create any Task</h3>';
+        echo '<h3 align="center"></><b>You haven\'t created any Task</b></u></h3>';
     }else {
         print utility\htmlTable::genarateTableFromMultiArray($data);
     }

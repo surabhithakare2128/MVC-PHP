@@ -1,39 +1,33 @@
-<!doctype html>
+<?php include 'header.php'; ?>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-</head>
-
-<body>
+<h1 align="center"><b><u>EDIT TASK</u></b></h1><br>
 
 <form action="index.php?page=tasks&action=save&id=<?php  echo $data->id; ?>" method="post">
-    <!-- id: <input type="text" name="id" value="<?php echo $data->id;?>"><br> -->
-    owner email: <input type="text" name="owneremail" value="<?php echo $data->owneremail;?>"><br>
-    <!-- owner id: <input type="text" name="ownerid" value="<?php echo $data->ownerid;?>"><br> -->
-    created date: <input type="text" name="createddate" value="<?php echo $data->createddate;?>"><br>
-    due date: <input type="text" name="duedate" value="<?php echo $data->duedate;?>"><br>
-    message: <input type="text" name="message" value="<?php echo $data->message;?>"><br>
-    is done: <input type="text" name="isdone" value="<?php echo $data->isdone;?>"><br>
 
-    <input type="submit" value="Update Task"> <br><br>
+    <div>
+        <label for="updatingTask"><b>Created Date:</b></label>
+        <input type="date" class="form-control" id="duedate"  name="duedate" value="<?php echo $data->createddate;?>" required >
+    </div><br>                                                                                                               <div>
+                                                                                                                                 <label for="updatingTask"><b>Due Date:</b></label>
+        <input type="date" class="form-control" id="duedate"  name="duedate" value="<?php echo $data->duedate;?>" required >
+    </div><br>
+
+    <div>
+        <label for="updatingTask"><b>Message:</b></label>
+        <input type="text" class="form-control" id="message" name="message" value="<?php echo $data->message;?>" required >
+    </div><br>
+
+    <div>
+        <label for="updatingTask"><b>Is Done?:</b></label>
+        <input type="number" class="form-control" id="isdone"  name="isdone" value="<?php echo $data->isdone;?>" required >
+    </div><br>
+
+    <button type="submit" class="btn btn-primary">UPDATE TASK</button> <br><br>
+
 </form>
 
 <form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
-    <button type="submit" form="form1" value="delete">Delete</button>
+    <button type="submit" class="btn btn-primary" form="form1" value="delete">DELETE TASK</button>
 </form>
 
-
-<script src="js/scripts.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>
