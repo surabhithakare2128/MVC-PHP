@@ -5,7 +5,7 @@
 
     <div>
         <label form="creatingTask"><b>Owner Email:</b></label>
-        <input type="email" class="form-control" id="owneremail"  name="duedate" placeholder="Enter Owner Email" required >
+        <input type="email" class="form-control" id="owneremail"  name="owneremail" placeholder="Enter Owner Email" required >
     </div><br>
 
     <div>
@@ -28,6 +28,10 @@
         <input type="number" class="form-control" id="isdone"  name="isdone" placeholder="Is it Done? Enter 0 for Not done and 1 for Done" required >
     </div><br>
 
-    <button type="submit" class="btn btn-primary">CREATE TASK</button> <br><br>
+    <button type="submit" class="btn btn-primary">CREATE TASK</button>
+
+    &emsp;&emsp;
+
+    <button type="reset" class="btn btn-primary">RESET</button>
 
 </form>
