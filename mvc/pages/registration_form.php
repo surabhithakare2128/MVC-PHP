@@ -33,7 +33,8 @@
 
     <div>
         <label for="registration"><b>Password:</b></label>
-        <input type="password" class="form-control" id="password"  name="password" placeholder="Enter Password" required >
+        <input type="password" class="form-control" id="password"  name="password" placeholder="Enter Password" minlength="6"
+               maxlength="10" size="10" required >
     </div><br>
 
     <button type="submit" class="btn btn-primary">REGISTER</button>
