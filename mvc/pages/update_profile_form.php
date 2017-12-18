@@ -23,7 +23,7 @@ print(utility\htmlTable::generateTableFromOneRecord($data));
 
     <div>
         <input type="hidden" class="form-control" id="email"  name="email" value="<?php echo $data->email; ?>" required >
-    </div><br>
+    </div>
 
     <div>
         <label form="updatingProfile"><b>Phone Number</b></label>
