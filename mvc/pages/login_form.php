@@ -1,23 +1,3 @@
-<!-- <form action="index.php?page=accounts&action=login" method="POST">
-
-    <div class="container">
-        <label><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="email" required>
-
-        <label><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
-
-        <button type="submit">Login</button>
-    </div>
-
-
-</form>
-<h1><a href="index.php?page=accounts&action=register">Register</a></h1>
-
--->
-
-
-
 <form action="index.php?page=accounts&action=login" method="POST">
     <div class="form-group">
         <label for="exampleInputEmail1"><b>Email address</b></label>
@@ -32,5 +12,7 @@
 
     <button type="submit" class="btn btn-primary">LOGIN</button>
 </form>
+<br><br>
+<h1 align="center">NEW USER? <a href="index.php?page=accounts&action=register">CLICK HERE TO REGISTER</a></h1>
 
-<h1><a href="index.php?page=accounts&action=register">Register</a></h1>
+<p align="center">WANT TO VIEW ALL ACCOUNTS? <a href="index.php?page=accounts&action=all_1">CLICK HERE</a></p>
