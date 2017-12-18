@@ -1,4 +1,4 @@
-<h1 align="center"><u>WELCOME TO MY WEBSITE!!!</u></h1>
+<h1 style="font-family: cursive" align="center"><b><u>WELCOME TO MY WEBSITE!!!</u></b></h1>
 
 <form action="index.php?page=accounts&action=login" method="POST">
     <div class="form-group">
