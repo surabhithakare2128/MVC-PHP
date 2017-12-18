@@ -11,8 +11,5 @@
 
 </head>
 
-<!--<body background="images/background.jpg" height="1000" width="800">
-//<img src="images/background.jpg" class="img-responsive" alt="Image"> -->
+<body>
     <br>
-    <!-- <h1><b><center>WELCOME TO MY WEBSITE!!!</center></b></h1> -->
-
