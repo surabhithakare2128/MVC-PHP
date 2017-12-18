@@ -8,7 +8,7 @@
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="https://web.njit.edu/~st638/project/mvc/index.php?page=tasks&action=all"><font color="#f5f5f5">HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="index.php?page=accounts&action=all_1"><font color="#f5f5f5">ALL ACCOUNTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a>
-            <a class="nav-item nav-link" href="index.php?page=tasks&action=create"><font color="#f5f5f5">CREATE TASKS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a>
+            <a class="nav-item nav-link" href="index.php?page=tasks&action=create"><font color="#f5f5f5">CREATE TASK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a>
             <a class="nav-item nav-link" href="index.php?page=accounts&action=show"><font color="#f5f5f5">YOUR PROFILE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></a>
             <a class="nav-item nav-link " href="index.php?page=accounts&action=logout"><font color="#f5f5f5">LOGOUT</font></a>
         </div>

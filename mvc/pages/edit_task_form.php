@@ -3,22 +3,22 @@
 <form action="index.php?page=tasks&action=save&id=<?php  echo $data->id; ?>" method="post">
 
     <div>
-        <label for="updatingTask"><b>Created Date:</b></label>
-        <input type="date" class="form-control" id="duedate"  name="duedate" value="<?php echo $data->createddate;?>" required >
-    </div><br>                                                                                                        
+        <label form="updatingTask"><b>Created Date:</b></label>
+        <input type="date" class="form-control" id="duedate"  name="createddate" value="<?php echo $data->createddate;?>" required >
+    </div><br>
 
         <div>
-            <label for="updatingTask"><b>Due Date:</b></label>
+            <label form="updatingTask"><b>Due Date:</b></label>
             <input type="date" class="form-control" id="duedate"  name="duedate" value="<?php echo $data->duedate;?>" required >
         </div><br>
 
         <div>
-            <label for="updatingTask"><b>Message:</b></label>
+            <label form="updatingTask"><b>Message:</b></label>
             <input type="text" class="form-control" id="message" name="message" value="<?php echo $data->message;?>" required >
         </div><br>
 
         <div>
-            <label for="updatingTask"><b>Is Done?:</b></label>
+            <label form="updatingTask"><b>Is Done?</b></label>
             <input type="number" class="form-control" id="isdone"  name="isdone" value="<?php echo $data->isdone;?>" required >
         </div><br>
 
