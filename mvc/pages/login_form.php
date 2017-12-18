@@ -1,4 +1,4 @@
-<h1 align="center">WELCOME TO MY WEBSITE!!!</h1>
+<h1 align="center"><u>WELCOME TO MY WEBSITE!!!</u></h1>
 
 <form action="index.php?page=accounts&action=login" method="POST">
     <div class="form-group">
@@ -14,7 +14,9 @@
 
     <button type="submit" class="btn btn-primary">LOGIN</button>
 </form>
+
 <br><br>
+
 <h1 align="center">NEW USER? <a href="index.php?page=accounts&action=register">CLICK HERE TO REGISTER</a></h1>
 
 <p align="center">WANT TO VIEW ALL ACCOUNTS? <a href="index.php?page=accounts&action=all_1">CLICK HERE</a></p>

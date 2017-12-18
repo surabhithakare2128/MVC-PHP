@@ -6,8 +6,13 @@ p{
 }
 
 h1{
-    
     font-family: "Arial Black";
     margin-right: 20px;
 
+}
+
+.divider{
+    width:100px;
+    height:auto;
+    display:inline-block;
 }
