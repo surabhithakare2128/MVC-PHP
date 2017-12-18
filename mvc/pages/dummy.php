@@ -1,14 +1,4 @@
-<h1><u>Email:</u> <?php echo $data->email; ?></h1>
-<h1><u>First Name:</u> <?php echo $data->fname; ?></h1>
-<h1><u>Last Name:</u> <?php echo $data->lname; ?></h1>
-
-
-<?php
-//this is how you print something  $data contains the record that was selected on the table.
-print(utility\htmlTable::generateTableFromOneRecord($data));
-?>
-
-<h1 align="center"><b><u>UPDATE YOUR PROFILE</u></b></h1><br>
+<h1 align="center"><b><u>EDIT TASK</u></b></h1><br>
 
 <form action="index.php?page=accounts&action=save&id=<?php echo $data->id; ?>" method="post">
 
@@ -46,5 +36,5 @@ print(utility\htmlTable::generateTableFromOneRecord($data));
 </form>
 
 <form action="index.php?page=accounts&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
-    <button type="submit" class="btn btn-primary" form="form1" form="form1" value="delete">DELETE PROFILE</button>
+    <button type="submit" class="btn btn-primary" form="form1" value="delete">DELETE PROFILE</button>
 </form>
