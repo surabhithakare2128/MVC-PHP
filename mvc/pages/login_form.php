@@ -1,3 +1,5 @@
+<h1 align="center">WELCOME TO MY WEBSITE!!!</h1>
+
 <form action="index.php?page=accounts&action=login" method="POST">
     <div class="form-group">
         <label for="exampleInputEmail1"><b>Email address</b></label>
