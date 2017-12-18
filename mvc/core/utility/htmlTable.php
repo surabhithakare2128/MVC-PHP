@@ -8,7 +8,7 @@ class htmlTable
     public static function genarateTableFromMultiArray($array)
     {
 
-        $tableGen = '<table border="1" align="center" cellpadding="10">';
+        $tableGen = '<table border="8" bordercolor="black" align="center" cellpadding="10" bgcolor="#d3d3d3" >';
         $tableGen .= '<tr>';
         //this grabs the first element of the array so we can extract the field headings for the table
         $fieldHeadings = $array[0];
@@ -17,7 +17,7 @@ class htmlTable
         //this gets the page being viewed so that the table routes requests to the correct controller
         $referingPage = $_REQUEST['page'];
         foreach ($fieldHeadings as $heading) {
-            $tableGen .= '<th>' . $heading . '</th>';
+            $tableGen .= '<th bgcolor="#708090">' . $heading . '</th>';
         }
         $tableGen .= '</tr>';
         foreach ($array as $record) {
@@ -40,7 +40,7 @@ class htmlTable
 
     public static function generateTableFromOneRecord($innerArray)
     {
-        $tableGen = '<table border="1" cellpadding="10"><tr>';
+        $tableGen = '<table border="8" align="center" cellpadding="10" bgcolor="#b0c4de">';
 
         $tableGen .= '<tr>';
         foreach ($innerArray as $innerRow => $value) {
@@ -59,7 +59,7 @@ class htmlTable
     public static function genarateTableFromMultiArra($array)
     {
 
-        $tableGen = '<table border="8" align="center" cellpadding="10" bgcolor="#bc8f8f">';
+        $tableGen = '<table border="8" bordercolor="black" align="center" cellpadding="10" bgcolor="#bc8f8f">';
         $tableGen .= '<tr>';
         //this grabs the first element of the array so we can extract the field headings for the table
         $fieldHeadings = $array[0];
@@ -68,7 +68,7 @@ class htmlTable
         //this gets the page being viewed so that the table routes requests to the correct controller
         $referingPage = $_REQUEST['page'];
         foreach ($fieldHeadings as $heading) {
-            $tableGen .= '<th>' . $heading . '</th>';
+            $tableGen .= '<th bgcolor="#708090">' . $heading . '</th>';
         }
         $tableGen .= '</tr>';
         foreach ($array as $record) {
