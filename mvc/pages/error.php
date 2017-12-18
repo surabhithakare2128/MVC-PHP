@@ -1,25 +1,12 @@
-<!doctype html>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+<?php include 'header.php'; ?>
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+<br>
+<h1 align="center">You are <?php echo $data ?></h1>
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+<br>
 
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-</head>
+<center><a href=https://web.njit.edu/~st638/project/mvc/index.php><u><b>GO BACK TO LOGIN</b></u></a>
+</center>
 
-<body>
-
-<h1><?php echo $data ?></h1>
-
-
-<script src="js/scripts.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>
