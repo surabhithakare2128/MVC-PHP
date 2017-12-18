@@ -59,6 +59,15 @@ abstract class collection
             return $recordsSet[0];
         }
     }
+
+    static public function findAll1()
+    {
+        $tableName = get_called_class();
+        $sql = 'SELECT * FROM ' . $tableName;
+        return self::getResults($sql);
+    }
+
+
 }
 
 ?>

@@ -111,6 +111,7 @@ class accountsController extends http\controller
 
         $record = accounts::findOne($_REQUEST['id']);
         $record->delete();
+        session_destroy();
         header("Location: https://web.njit.edu/~st638/project/mvc/index.php");
     }
 
@@ -160,12 +161,18 @@ class accountsController extends http\controller
         session_start();
         unset($_SESSION['userID']);
         header("Location: https://web.njit.edu/~st638/project/mvc/index.php");
+        session_destroy();
 
     }
 
 
+    public static function all_1()
+    {
+        $records = accounts::findAll();
+        self::getTemplate('demo', $records);
+    }
 
-
+    
 /*
     public static function showpage()
     {

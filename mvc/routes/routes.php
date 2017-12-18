@@ -185,6 +185,15 @@ class routes
         $route->controller = 'accountsController';
         $route->method = 'one';
         $routes[] = $route;
+
+        $route = new route();
+        $route->http_method = 'GET';
+        $route->action = 'all_1';
+        $route->page = 'accounts';
+        $route->controller = 'accountsController';
+        $route->method = 'all_1';
+        $routes[] = $route;
+
 /*
 
         $route = new route();
