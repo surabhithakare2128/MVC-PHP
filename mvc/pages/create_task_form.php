@@ -25,7 +25,7 @@
 
     <div>
         <label form="creatingTask"><b>Is Done?</b></label>
-        <input type="number" class="form-control" id="isdone"  name="isdone" placeholder="Is it Done? Enter 0 for Not done and 1 for Done" required >
+        <input type="number" class="form-control" id="isdone"  name="isdone" placeholder="Is it Done? Enter 0 for Not done and 1 for Done" min="0" max="1" required >
     </div><br>
 
     <button type="submit" class="btn btn-primary">CREATE TASK</button>

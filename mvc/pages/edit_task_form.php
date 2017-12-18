@@ -4,12 +4,12 @@
 
     <div>
         <label form="updatingTask"><b>Created Date:</b></label>
-        <input type="date" class="form-control" id="duedate"  name="createddate" value="<?php echo $data->createddate;?>" required >
+        <input type="date" class="form-control" id="duedate"  name="createddate" value="<?php echo $data->createddate;?>" disabled required >
     </div><br>
 
         <div>
             <label form="updatingTask"><b>Due Date:</b></label>
-            <input type="date" class="form-control" id="duedate"  name="duedate" value="<?php echo $data->duedate;?>" required >
+            <input type="date" class="form-control" id="duedate"  name="duedate" value="<?php echo $data->duedate;?>" disabled required >
         </div><br>
 
         <div>
@@ -19,7 +19,7 @@
 
         <div>
             <label form="updatingTask"><b>Is Done?</b></label>
-            <input type="number" class="form-control" id="isdone"  name="isdone" value="<?php echo $data->isdone;?>" required >
+            <input type="number" class="form-control" id="isdone"  name="isdone" value="<?php echo $data->isdone;?>"  min="0"   max="1"  required >
         </div><br>
 
         <button type="submit" class="btn btn-primary">UPDATE TASK</button> <br><br>
