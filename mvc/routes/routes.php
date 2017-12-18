@@ -193,25 +193,7 @@ class routes
         $route->controller = 'accountsController';
         $route->method = 'all_1';
         $routes[] = $route;
-
-/*
-
-        $route = new route();
-        $route->http_method = 'GET';
-        $route->action = 'show';
-        $route->page = 'accounts';
-        $route->controller = 'accountsController';
-        $route->method = 'show';
-        $routes[] = $route;
-
-        $route = new route();
-        $route->http_method = 'GET';
-        $route->action = 'show';
-        $route->page = 'tasks';
-        $route->controller = 'tasksController';
-        $route->method = 'show';
-        $routes[] = $route;
-*/
+        
         return $routes;
     }
 

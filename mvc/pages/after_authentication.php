@@ -15,18 +15,19 @@
     </div>
 </nav>
 
-<br>
-
-<h1 align="center"><b><u>Tasks Created By You Are As Follows</u></b></h1>
-
-<br>
+<br><br>
 
 <?php
 
     if($data == false){
         echo '<h3 align="center"></><b>You haven\'t created any Task</b></u></h3>';
+        echo '<br><h5 align="center"><b>**Click on CREATE TASK to create a new task task**</b></h5>';
     }else {
+        echo '<h1 align="center"><b><u>Tasks Created By You Are As Follows</u></b></h1><br>';
         print utility\htmlTable::genarateTableFromMultiArray($data);
+        echo '<br><h5 align="center"><b>**Click on VIEW to update or delete task**</b></h5>';
     }
 
 ?>
+
+
