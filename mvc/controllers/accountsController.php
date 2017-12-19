@@ -142,7 +142,7 @@ class accountsController extends http\controller
                 //header("Location: index.php?page=after_login&action=all");
                // header("Location: index.php?page=after_login&action=show");
             } else {
-                echo '<br><h1><u><b>PASSWORD DOESN\'T MATCH</b></u></h1>';
+                echo '<br><h1><u><b>INCORRECT PASSWORD</b></u></h1>';
                 echo '<a href="index.php"><font><u>CLICK HERE TO GO BACK TO LOGIN PAGE</u></font></a>';
             }
 
