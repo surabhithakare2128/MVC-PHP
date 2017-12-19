@@ -23,7 +23,7 @@
 
     <div>
         <label for="registration"><b>Birthday:</b></label>
-        <input type="date" class="form-control" id="lname"  name="lname" placeholder="Enter Last Name" required >
+        <input type="date" class="form-control" id="birthday"  name="birthday" placeholder="Enter Last Name" required >
     </div><br>
 
     <div>

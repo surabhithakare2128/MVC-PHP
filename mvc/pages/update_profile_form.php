@@ -7,6 +7,10 @@
 print(utility\htmlTable::generateTableFromOneRecord($data));
 ?>
 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="index.php?page=tasks&action=all"><b><font>CLICK HERE TO GO BACK TO HOMEPAGE</font></b></a>
+
+<hr>
+
 <h1 align="center"><b><u>UPDATE YOUR PROFILE</u></b></h1><br>
 
 <form action="index.php?page=accounts&action=save&id=<?php echo $data->id; ?>" method="post">

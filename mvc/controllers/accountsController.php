@@ -103,7 +103,7 @@ class accountsController extends http\controller
         $user->save();
 
 
-        header("Location: index.php?page=tasks&action=all");
+        header("Location: index.php?page=accounts&action=show");
 
     }
 
@@ -168,7 +168,7 @@ class accountsController extends http\controller
         self::getTemplate('demo', $records);
     }
 
-    
+
 /*
     public static function showpage()
     {
